@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ColdChain | Live Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+    <nav class="navbar">
+
+        <a href="index.html" class="brand brand-link">
+
+            <span class="brand-mark">CC</span>
+
+            <div>
+                <strong>COLDCHAIN</strong>
+                <span>COMMAND CENTER</span>
+            </div>
+
+        </a>
+
+
+        <div id="connection" class="nav-status">
+
+            <span class="nav-dot"></span>
+
+            <span id="connectionText">
+                CONNECTING...
+            </span>
+
+        </div>
+
+    </nav>
+
+
+    <main class="dashboard-container">
+
+
+        <!-- HEADER -->
+
+        <div class="dashboard-heading">
+
+            <div>
+
+                <span class="eyebrow">
+                    LIVE TELEMETRY
+                </span>
+
+                <h1>
+                    COLDNODE-01
+                </h1>
+
+                <p>
+                    Real-time cold-chain monitoring and
+                    anomaly detection.
+                </p>
+
+            </div>
+
+
+            <div class="dashboard-meta">
+
+                <div>
+                    <span>RECORD</span>
+                    <strong id="recordId">--</strong>
+                </div>
+
+                <div>
+                    <span>LAST UPDATE</span>
+                    <strong id="lastUpdate">
+                        Waiting...
+                    </strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MAIN SENSOR CARDS -->
+
+        <section class="cards">
+
+
+            <div class="card temperature">
+
+                <span class="card-title">
+                    DS18B20 TEMPERATURE
+                </span>
+
+                <div class="value">
+
+                    <span id="temperature">
+                        --
+                    </span>
+
+                    <span class="unit">
+                        °C
+                    </span>
+
+                </div>
+
+                <p>
+                    PRIMARY TEMPERATURE SENSOR
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <span class="card-title">
+                    DHT22 TEMPERATURE
+                </span>
+
+                <div class="value">
+
+                    <span id="dht22Temperature">
+                        --
+                    </span>
+
+                    <span class="unit">
+                        °C
+                    </span>
+
+                </div>
+
+                <p>
+                    SECONDARY TEMPERATURE SENSOR
+                </p>
+
+            </div>
+
+
+            <div class="card humidity">
+
+                <span class="card-title">
+                    HUMIDITY
+                </span>
+
+                <div class="value">
+
+                    <span id="humidity">
+                        --
+                    </span>
+
+                    <span class="unit">
+                        %
+                    </span>
+
+                </div>
+
+                <p>
+                    DHT22
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <span class="card-title">
+                    MOTION / TAMPER
+                </span>
+
+                <div
+                    class="value"
+                    id="motion"
+                >
+                    --
+                </div>
+
+                <p>
+                    IR SENSOR
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ML -->
+
+        <section class="status-panel">
+
+            <div>
+
+                <span class="card-title">
+                    EDGE ML CLASSIFICATION
+                </span>
+
+                <h2 id="mlStatus">
+                    --
+                </h2>
+
+            </div>
+
+
+            <div class="status-description">
+
+                <span>
+                    MODEL
+                </span>
+
+                <strong>
+                    ENVIRONMENTAL ANOMALY DETECTION
+                </strong>
+
+            </div>
+
+
+            <div id="systemStatus"
+                 class="system-badge">
+
+                --
+
+            </div>
+
+        </section>
+
+
+        <!-- IMU + BLOCKCHAIN -->
+
+        <section class="dashboard-grid">
+
+
+            <div class="panel">
+
+                <h2>
+                    IMU TELEMETRY
+                </h2>
+
+
+                <div class="sensor-grid">
+
+
+                    <div>
+                        <span>
+                            ACC X
+                        </span>
+
+                        <strong id="accX">
+                            --
+                        </strong>
+                    </div>
+
+
+                    <div>
+                        <span>
+                            ACC Y
+                        </span>
+
+                        <strong id="accY">
+                            --
+                        </strong>
+                    </div>
+
+
+                    <div>
+                        <span>
+                            ACC Z
+                        </span>
+
+                        <strong id="accZ">
+                            --
+                        </strong>
+                    </div>
+
+
+                    <div>
+                        <span>
+                            GYRO X
+                        </span>
+
+                        <strong id="gyroX">
+                            --
+                        </strong>
+                    </div>
+
+
+                    <div>
+                        <span>
+                            GYRO Y
+                        </span>
+
+                        <strong id="gyroY">
+                            --
+                        </strong>
+                    </div>
+
+
+                    <div>
+                        <span>
+                            GYRO Z
+                        </span>
+
+                        <strong id="gyroZ">
+                            --
+                        </strong>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <h2>
+                    BLOCKCHAIN INTEGRITY
+                </h2>
+
+
+                <div class="blockchain-status">
+
+                    <div class="chain-icon">
+                        ✓
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            HASH-CHAIN PROTECTED
+                        </strong>
+
+                        <p>
+                            Telemetry records are cryptographically
+                            chained before blockchain anchoring.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="chain-info">
+
+
+                    <div>
+
+                        <span>
+                            NETWORK
+                        </span>
+
+                        <strong>
+                            Polygon Amoy
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            ANCHORING
+                        </span>
+
+                        <strong>
+                            ACTIVE
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- LIVE TABLE -->
+
+        <section class="panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>
+                        LIVE TELEMETRY LOG
+                    </h2>
+
+                    <p class="panel-subtitle">
+                        Latest readings received from the node
+                    </p>
+
+                </div>
+
+                <span id="tableStatus">
+                    LIVE
+                </span>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                RECORD
+                            </th>
+
+                            <th>
+                                DS18B20
+                            </th>
+
+                            <th>
+                                DHT22 TEMP
+                            </th>
+
+                            <th>
+                                HUMIDITY
+                            </th>
+
+                            <th>
+                                MOTION
+                            </th>
+
+                            <th>
+                                ML STATUS
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="telemetryTable">
+
+                        <tr>
+
+                            <td colspan="6">
+                                Waiting for telemetry...
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- RAW DATA -->
+
+        <section class="panel raw-panel">
+
+            <h2>
+                RAW TELEMETRY
+            </h2>
+
+            <pre id="rawData">
+Waiting for telemetry...
+            </pre>
+
+        </section>
+
+
+        <div class="back-link">
+
+            <a href="index.html">
+                ← BACK TO COLDCHAIN
+            </a>
+
+        </div>
+
+
+    </main>
+
+
+    <footer>
+
+        COLDCHAIN · COLDNODE-01 · ESP32-S3
+
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

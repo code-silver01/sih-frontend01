@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ColdChain | Secure Cold-Chain Intelligence</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="landing">
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="brand">
+            <span class="brand-mark">CC</span>
+
+            <div>
+                <strong>COLDCHAIN</strong>
+                <span>INTELLIGENCE SYSTEM</span>
+            </div>
+        </div>
+
+        <div class="nav-status">
+            <span class="nav-dot"></span>
+            SYSTEM ONLINE
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                SECURE COLD-CHAIN TELEMETRY
+            </div>
+
+            <h1>
+                Every shipment has a
+                <span>digital memory.</span>
+            </h1>
+
+            <p class="hero-text">
+                ColdChain is an intelligent IoT monitoring system that
+                continuously tracks environmental conditions, detects
+                anomalies at the edge, protects telemetry with
+                cryptographic hash chaining, and anchors verified batches
+                to the blockchain.
+            </p>
+
+            <a href="dashboard.html" class="cta">
+                OPEN LIVE DASHBOARD
+                <span>→</span>
+            </a>
+
+            <div class="hero-note">
+                ESP32-S3 · Edge ML · SHA-256 · Merkle Trees · Polygon Amoy
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="node-card">
+
+                <div class="node-header">
+                    <span class="live-indicator"></span>
+                    COLDNODE-01
+                    <span class="node-online">ONLINE</span>
+                </div>
+
+                <div class="node-temp">
+                    <span>28.69</span>
+                    <small>°C</small>
+                </div>
+
+                <div class="node-label">
+                    DS18B20 TEMPERATURE
+                </div>
+
+                <div class="mini-grid">
+
+                    <div>
+                        <span>HUMIDITY</span>
+                        <strong>71.1%</strong>
+                    </div>
+
+                    <div>
+                        <span>MOTION</span>
+                        <strong>DETECTED</strong>
+                    </div>
+
+                    <div>
+                        <span>ML</span>
+                        <strong>ANOMALY</strong>
+                    </div>
+
+                    <div>
+                        <span>RECORD</span>
+                        <strong>#630</strong>
+                    </div>
+
+                </div>
+
+                <div class="hash-line">
+                    <span>SHA-256 HASH CHAIN</span>
+                    <span>✓ VERIFIED</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROBLEM -->
+
+    <section class="section">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">THE PROBLEM</span>
+
+            <h2>
+                A temperature reading isn't enough.
+            </h2>
+
+            <p>
+                Cold-chain failures can happen between checkpoints.
+                Traditional monitoring can tell you what happened —
+                but not whether the record itself can be trusted.
+            </p>
+
+        </div>
+
+
+        <div class="problem-grid">
+
+            <div class="feature-card">
+
+                <span class="feature-number">01</span>
+
+                <h3>Silent excursions</h3>
+
+                <p>
+                    Temperature and humidity can drift outside acceptable
+                    conditions without immediate human intervention.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <span class="feature-number">02</span>
+
+                <h3>Disconnected journeys</h3>
+
+                <p>
+                    Connectivity isn't guaranteed throughout transport.
+                    Critical telemetry must survive network outages.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <span class="feature-number">03</span>
+
+                <h3>Questionable records</h3>
+
+                <p>
+                    A database can store a number. It doesn't inherently
+                    prove that the number wasn't modified later.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOLUTION -->
+
+    <section class="section dark-section">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">THE SOLUTION</span>
+
+            <h2>
+                Intelligence at the edge.
+                Integrity all the way through.
+            </h2>
+
+        </div>
+
+
+        <div class="architecture">
+
+            <div class="architecture-step">
+
+                <div class="step-number">01</div>
+
+                <h3>SENSE</h3>
+
+                <p>
+                    ESP32-S3 collects temperature, humidity,
+                    motion and inertial telemetry.
+                </p>
+
+            </div>
+
+
+            <div class="architecture-arrow">→</div>
+
+
+            <div class="architecture-step">
+
+                <div class="step-number">02</div>
+
+                <h3>DECIDE</h3>
+
+                <p>
+                    A lightweight anomaly model evaluates
+                    environmental conditions directly at the edge.
+                </p>
+
+            </div>
+
+
+            <div class="architecture-arrow">→</div>
+
+
+            <div class="architecture-step">
+
+                <div class="step-number">03</div>
+
+                <h3>PROTECT</h3>
+
+                <p>
+                    Every telemetry record is linked using
+                    a SHA-256 hash chain and stored locally.
+                </p>
+
+            </div>
+
+
+            <div class="architecture-arrow">→</div>
+
+
+            <div class="architecture-step">
+
+                <div class="step-number">04</div>
+
+                <h3>ANCHOR</h3>
+
+                <p>
+                    Verified batches are compressed into a Merkle
+                    root and anchored on Polygon Amoy.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SENSOR SYSTEM -->
+
+    <section class="section">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">EDGE HARDWARE</span>
+
+            <h2>
+                One node. Multiple signals.
+            </h2>
+
+        </div>
+
+
+        <div class="sensor-grid-large">
+
+            <div class="sensor-card">
+
+                <div class="sensor-icon">T</div>
+
+                <h3>DS18B20</h3>
+
+                <p>
+                    Primary digital temperature measurement
+                    for the cold-chain environment.
+                </p>
+
+                <span class="sensor-tag">TEMPERATURE</span>
+
+            </div>
+
+
+            <div class="sensor-card">
+
+                <div class="sensor-icon">H</div>
+
+                <h3>DHT22</h3>
+
+                <p>
+                    Independent temperature and humidity
+                    monitoring for environmental context.
+                </p>
+
+                <span class="sensor-tag">HUMIDITY</span>
+
+            </div>
+
+
+            <div class="sensor-card">
+
+                <div class="sensor-icon">M</div>
+
+                <h3>IR SENSOR</h3>
+
+                <p>
+                    Detects motion and physical interference
+                    around the monitored node.
+                </p>
+
+                <span class="sensor-tag">TAMPER</span>
+
+            </div>
+
+
+            <div class="sensor-card">
+
+                <div class="sensor-icon">IMU</div>
+
+                <h3>MPU6050</h3>
+
+                <p>
+                    Tracks acceleration and angular motion
+                    to provide transport-condition context.
+                </p>
+
+                <span class="sensor-tag">MOTION</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTELLIGENCE -->
+
+    <section class="section dark-section">
+
+        <div class="split-section">
+
+            <div>
+
+                <span class="eyebrow">EDGE INTELLIGENCE</span>
+
+                <h2>
+                    Detect problems before
+                    they become incidents.
+                </h2>
+
+                <p>
+                    The ESP32-S3 runs a lightweight anomaly-detection
+                    model using environmental telemetry. This means
+                    the device can classify suspicious conditions
+                    without waiting for a cloud server.
+                </p>
+
+            </div>
+
+
+            <div class="data-card">
+
+                <div class="data-row">
+                    <span>DS18B20</span>
+                    <strong>28.69 °C</strong>
+                </div>
+
+                <div class="data-row">
+                    <span>DHT22</span>
+                    <strong>29.10 °C</strong>
+                </div>
+
+                <div class="data-row">
+                    <span>HUMIDITY</span>
+                    <strong>71.10 %</strong>
+                </div>
+
+                <div class="data-row">
+                    <span>MOTION</span>
+                    <strong>DETECTED</strong>
+                </div>
+
+                <div class="data-row anomaly-row">
+                    <span>MODEL OUTPUT</span>
+                    <strong>ANOMALY</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SECURITY -->
+
+    <section class="section">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">DATA INTEGRITY</span>
+
+            <h2>
+                The record is part of the evidence.
+            </h2>
+
+            <p>
+                ColdChain doesn't simply store telemetry.
+                It creates a verifiable chain of evidence.
+            </p>
+
+        </div>
+
+
+        <div class="security-flow">
+
+            <div class="security-box">
+                <strong>TELEMETRY</strong>
+                <span>Sensor record</span>
+            </div>
+
+            <span>→</span>
+
+            <div class="security-box">
+                <strong>SHA-256</strong>
+                <span>Hash chain</span>
+            </div>
+
+            <span>→</span>
+
+            <div class="security-box">
+                <strong>MERKLE ROOT</strong>
+                <span>Batch integrity</span>
+            </div>
+
+            <span>→</span>
+
+            <div class="security-box">
+                <strong>POLYGON</strong>
+                <span>Immutable anchor</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="final-cta">
+
+        <span class="eyebrow">LIVE SYSTEM</span>
+
+        <h2>
+            See what the node sees.
+        </h2>
+
+        <p>
+            Monitor the live telemetry stream from COLDNODE-01.
+        </p>
+
+        <a href="dashboard.html" class="cta">
+            OPEN LIVE DASHBOARD
+            <span>→</span>
+        </a>
+
+    </section>
+
+
+    <footer>
+
+        <div>
+            COLDCHAIN · SECURE COLD-CHAIN INTELLIGENCE
+        </div>
+
+        <div>
+            ESP32-S3 · EDGE ML · BLOCKCHAIN
+        </div>
+
+    </footer>
+
+</body>
+</html>
