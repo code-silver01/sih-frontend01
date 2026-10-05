@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/telemetry";
+const API_URL = "https://sih-backend01-1.onrender.com/api/telemetry";
 
 const history = [];
 
